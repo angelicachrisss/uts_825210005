@@ -1,0 +1,476 @@
+* {padding: 0px; margin: 0px;}
+
+body{
+    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: +1;
+}
+
+/* kiri */
+nav .kiri{
+    width: 900px;
+    float: left;
+    display: inline;
+    padding-top: 30px;
+}
+
+nav .kiri .gambar img{
+    width: 200px;
+    height: auto;
+    border-right: 2px solid black;
+    padding-right: 5px;
+    float: left;
+}
+
+nav .kiri .tombol ul li{
+    float:left;
+    list-style: none;
+    padding-top: 30px;
+}
+
+nav .kiri .tombol ul li a{
+    margin-right: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    padding: 3px 15px;
+}
+
+nav .kiri .tombol ul li ul {
+    opacity: 0;
+    transition: all 60ms ease-in;
+    visibility: hidden;
+}
+
+nav .kiri .tombol ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .kiri .tombol ul li ul{
+    position:absolute;
+}
+
+nav .kiri .tombol ul li ul li{
+    float: none;
+    position: relative;
+    background-color: white;
+    padding-bottom: 10px;
+    z-index: +1;
+}
+
+nav .kiri .tombol ul li a:hover {
+    color:red;
+}
+
+nav .kiri .tombol ul ul ul{
+    left:100%;
+    top: 0;
+    width: 200px;
+}
+
+/* kanan */
+nav .kanan{
+    width: 500px;
+    float: right;
+}
+
+nav .kanan .info {
+    width: 700px;
+    padding-top: 30px;
+}
+
+nav .kanan .info .kirik{
+    width: 300px;
+}
+
+nav .kanan .info .kirik .gambar img{
+    width: 20px;
+    padding-top: 24px;
+    float: left;
+}
+
+nav .kanan .info .kirik .telp h4{
+    margin-top: 20px;
+    font-size: 20px;
+    float: left;
+    display: inline;
+    padding: 5px 5px 0 4px;
+    border-right: 2px solid black;
+}
+
+nav .kanan .info .kanank{
+    width: 400px;
+    margin-left: 10px; 
+}
+
+nav .kanan .info .kanank img{
+    padding-top: 20px;
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    float: left;
+    padding-left: 20px;
+}
+
+nav .kanan .info .kanank img:hover{
+    filter: invert(65%) sepia(16%) saturate(5417%) hue-rotate(356deg) brightness(107%) contrast(91%);
+    transition: 1s;
+}
+
+nav .kanan .search{
+    width: 100px;
+}
+
+nav .kanan .search img{
+    width: 30px;
+    bottom: 50px;
+    left: 400px;
+    position:relative;
+    background-color: orange;
+    padding: 20px;
+    float: right;
+}
+
+/* about */
+
+article{
+    width: 100%;
+}
+
+article .about .place .gambar .foto img{
+    height: 700px;
+    object-fit:cover;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+article .about .place .font h1{
+    font-family:'Brush Script MT', cursive;
+    position: absolute;
+    font-size: 90px;
+    top: 300px;
+    right: 50%;
+    transform: translate(50%,0);
+    color: white;
+}
+
+article .about .place .font h3{
+    font-family:Garamond, serif;
+    position: absolute;
+    font-size: 35px;
+    top: 430px;
+    right: 50%;
+    transform: translate(50%,0);
+    color: white;
+}
+
+/* maps */
+article .maps{
+    width: 100%;
+    height: 600px;
+}
+
+article .maps .isi{
+    transform: translate(50%,0);
+    margin-top: 50px;
+    width: 1000px;
+    position: absolute;
+    right: 50%;
+}
+
+article .maps .isi iframe{
+    width: 1000px;
+    height: 500px;
+}
+
+/* getintouch */
+article .git{
+    width: 100%;
+    height: 600px;
+}
+
+article .git .contain{
+    transform: translate(50%,0);
+    margin-top: 50px;
+    width: 1000px;
+    position: absolute;
+    right: 50%;
+}
+
+.git .contain .kiri{
+    width:480px;
+}
+
+.git .contain .kiri h2{
+    font-family: "Rubik",sans-serif;
+}
+
+.git .contain .kiri textarea{
+    resize: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 428px;
+}
+
+.git .contain .kiri .enternameemail{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.git .contain .kiri .inputsub input{
+    width: 200px;
+    padding: 10px;
+}
+
+.git .contain .kiri textarea{
+    border: 1px solid black;
+}
+
+.git .contain .kiri input{
+    margin-right: 30px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.git .contain a{
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    padding: 13px;
+    background-color: aqua;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.git .contain a:hover{
+    background-color:rgb(211, 80, 80);
+    transition-duration: 1s;
+}
+
+.git .contain .kanan{
+    width: 400px;
+    position: relative;
+    left: 600px;
+    bottom: 430px;
+}
+
+.git .contain .kanan img{
+    width: 50px;
+    margin-bottom: 30px;
+    position: fixed;
+}
+
+.git .contain .kanan .tengah img{
+    top: 100px;
+}
+
+.git .contain .kanan .bawah img{
+    top: 220px;
+}
+
+.git .contain .kanan h5{
+    position: absolute;
+    left: 60px;
+    font-size: 20px;
+}
+
+.git .contain .kanan .atas h5{
+    top: 10px;
+}
+
+.git .contain .kanan .tengah h5{
+    top: 90px;
+}
+
+.git .contain .kanan .bawah h5{
+    top: 220px;
+}
+
+.git .contain .kanan p{
+    position: absolute;
+    left: 60px;
+}
+
+.git .contain .kanan .atas p{
+    top: 30px;
+}
+
+.git .contain .kanan .tengah p{
+    top: 115px;
+}
+
+.git .contain .kanan .bawah p{
+    top: 250px;
+}
+
+
+
+/* footer */
+footer .kotakfoot{
+    width: 100%;
+    height: 630px;
+    right: 50%;
+    background-color:wheat;
+    float: left;
+}
+
+footer .kotakfoot .contain{
+    width: 1200px;
+    height: 500px;
+    right: 50%;
+    transform: translate(50%,0);
+    position: absolute;
+    margin-top: 120px;
+}
+
+footer .kotakfoot .contain .info img{
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+footer .kotakfoot .contain .text{
+    display: block;
+}
+
+footer .kotakfoot .contain .info p{
+    width: 300px;
+    font-size: 20px;
+    color: gray;
+}
+
+footer .kotakfoot .contain .info a{
+    width: 300px;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+
+footer .kotakfoot .contain .info a:hover{
+    color: purple;
+    transition: 1s;
+}
+
+footer .kotakfoot .contain .info .gambar{
+    display: flex;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+footer .kotakfoot .contain .info .gambar img{
+    width: 30px;
+}
+
+footer .kotakfoot .contain .info .gambar img:hover{
+    filter: invert(65%) sepia(16%) saturate(5417%) hue-rotate(356deg) brightness(107%) contrast(91%);
+    transition: 1s;
+}
+
+footer .kotakfoot .contain .company{
+    width: 300px;
+    position: relative;
+    left: 320px;
+    bottom: 250px;
+}
+
+footer .kotakfoot .contain .company h2{
+    margin-bottom: 20px;
+}
+
+
+footer .kotakfoot .contain .company a{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+footer .kotakfoot .contain .company a:hover{
+    color: purple;
+    transition: 1s;
+}
+
+footer .kotakfoot .contain .popdest{
+    width: 300px;
+    position: relative;
+    left: 520px;
+    bottom: 430px;
+}
+
+footer .kotakfoot .contain .popdest h2{
+    margin-bottom: 20px;
+}
+
+footer .kotakfoot .contain .popdest .kiri {
+    width: 100px;
+}
+
+footer .kotakfoot .contain .popdest a{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+footer .kotakfoot .contain .popdest a:hover{
+    color: purple;
+    transition: 1s;
+}
+
+footer .kotakfoot .contain .popdest .kanan {
+    width: 100px;
+    position: relative;
+    left: 100px;
+    bottom: 134px;
+}
+
+footer .kotakfoot .contain .instagram{
+    width: 400px;
+    position: relative;
+    left: 780px;
+    bottom: 746px;
+}
+
+footer .kotakfoot .contain .instagram h2{
+    margin-bottom: 20px;
+}
+
+footer .kotakfoot .contain .instagram img{
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+footer .kotakfoot .contain .cp{
+    width: 1140px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-598%);
+    padding: 30px;
+    border-top: 1px solid gray;
+}
+
+footer .kotakfoot .contain .cp p{
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+footer .kotakfoot .contain .cp a{
+    text-decoration: none;
+    color: red;
+}
