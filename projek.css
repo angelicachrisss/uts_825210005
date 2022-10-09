@@ -675,7 +675,7 @@ article .popplaces .contain .kotakgambar .gambar:hover > .kotakisi .judul{
     text-align: center;
 }
 
-.video .button a{
+.video .pulse a{
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -686,7 +686,37 @@ article .popplaces .contain .kotakgambar .gambar:hover > .kotakisi .judul{
     position: relative;
     left: 270px;
     top: 90px;
+    animation: pulse 2s infinite;
 }
+
+    @-webkit-keyframes pulse{
+        0%{
+            -webkit-box-shadow: 0 0 0 0 rgb(0, 208, 255);
+        }
+        70%{
+            -webkit-box-shadow: 0 0 0 10px rgba(69, 186, 212, 0.537);
+        }
+        100%{
+            -webkit-box-shadow: 0 0 0 0 rgba(79, 202, 221, 0.892);
+        }
+    }
+
+    @keyframes pulse {
+        0%{
+            -moz-box-shadow: 0 0 0 0 rgb(0, 208, 255);
+            box-shadow: 0 0 0 0 rgb(0, 208, 255);
+        }
+
+        70%{
+            -moz-box-shadow: 0 0 0 10px rgba(69, 186, 212, 0.537);
+            box-shadow: 0 0 0 10px rgba(69, 186, 212, 0.537);
+        }
+        100%{
+            -moz-box-shadow: 0 0 0 0 rgb(0, 208, 255);
+            box-shadow: 0 0 0 0 rgb(0, 208, 255);
+        }
+    }
+
 
 
 
